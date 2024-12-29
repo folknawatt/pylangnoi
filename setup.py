@@ -7,10 +7,11 @@ setuptools.setup(
     description="Langnoi Python Pacakge",
     license="MIT License",
     version="0.1.8",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(where="pylangnoi"),
+    package_dir={"": "pylangnoi"},
     include_package_data=True,
     package_data={
-        "pylangnoi.pyarmor_runtime_000000": ["*"],
+        "pylangnoi.pyarmor_runtime_000000": ["**/*"],
     },
     install_requires=[
         "langchain-community",

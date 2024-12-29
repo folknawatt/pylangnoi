@@ -8,8 +8,9 @@ setuptools.setup(
     license="MIT License",
     version="0.1.8",
     packages=setuptools.find_packages(),
+    include_package_data=True,
     package_data={
-        "pylangnoi.pyarmor_runtime_000000": ["pyarmor_runtime.pyd"]
+        "pylangnoi.pyarmor_runtime_000000": ["*"],
     },
     install_requires=[
         "langchain-community",

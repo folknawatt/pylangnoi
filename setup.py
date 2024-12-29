@@ -7,10 +7,10 @@ setuptools.setup(
     description="Langnoi Python Pacakge",
     license="MIT License",
     version="0.1.8",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(include=["pylangnoi.pytransform","pylangnoi.pytransform.*"]),
     include_package_data=True,
     package_data={
-        "pylangnoi.pytransform": ["***/**/*"],
+        "pylangnoi.pytransform": ["**/*"],
     },
     install_requires=[
         "langchain-community",

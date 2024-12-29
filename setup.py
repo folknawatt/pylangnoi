@@ -9,9 +9,8 @@ setuptools.setup(
     version="0.1.8",
     packages=setuptools.find_packages(),
     package_data={
-        "pylangnoi.pyarmor_runtime_000000": ["windows_x86_64.pyarmor_runtime.pyd"]
+        "pylangnoi.pyarmor_runtime_000000": ["pyarmor_runtime.pyd"]
     },
-    include_package_data=True,
     install_requires=[
         "langchain-community",
         "langchainhub",

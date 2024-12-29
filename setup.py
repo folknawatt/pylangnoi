@@ -10,7 +10,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     include_package_data=True,
     package_data={
-        "pylangnoi.pyarmor_runtime_000000": ["**/*"],
+        "pylangnoi.pytransform": ["**/*"],
     },
     install_requires=[
         "langchain-community",
